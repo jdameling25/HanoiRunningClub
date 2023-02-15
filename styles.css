@@ -1,0 +1,279 @@
+* {
+    font-family: "Raleway", Verdana, Geneva, Tahoma, sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+/************************ navigation bar */
+nav {
+    display: flex;
+    position: fixed;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    background-color: black;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    height: 4.375rem;
+}
+
+nav .links {
+    list-style-type: none;
+    font-weight: bold;
+    font-size: 1.4rem;
+}
+
+a:link {
+    color: white;
+}
+
+a:visited {
+    color: skyblue;
+}
+
+a:hover {
+    color: dodgerblue;
+}
+
+nav li {
+    display: inline;
+    color: white;
+}
+
+nav .links li {
+    margin: 0 0.9375rem;
+}
+
+nav .icons li {
+    margin: 0 0.5rem;
+}
+
+.icons a:hover, .logo a:hover {
+    opacity: 0.5;
+}
+
+#twitter {
+    margin-right: 1rem;
+}
+#logo {
+    height: 4.0625rem;
+}
+
+.icons .icon {
+    width: 1.5625rem;
+}
+/************************Home */ 
+.Home {
+    margin-top: 4.375rem;
+    position: relative;
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(./Resources/Home.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+    min-height: 48.75rem;
+    text-align: center;
+}
+
+.Home h1 {
+    font-size: 5rem;
+    padding-top: 20%;
+    color: white;
+    font-weight: bold;
+}
+
+.Home h3 {
+    color: white;
+    font-weight: bold;
+    font-size: 2rem;
+}
+
+.Home button {
+    border: 1px solid white;
+    color: white;
+    font-size: 1rem;
+    background: transparent;
+    border-radius: 5px;
+    padding: 0.625rem 0.625rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: border 0.3s, color 0.3s,;
+}
+
+.Home button:hover {
+    background-color: white;
+    color: black;
+}
+/************************ About */
+.About {
+    padding-top: 4.375rem;
+    display: inline-flex;
+    margin: 0 2.5rem;
+}
+
+.About img {
+    max-height: 25rem;
+    border-radius: 10px 10px;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+p {
+    font-size: 1.5rem;
+    line-height: 2rem;
+}
+
+.about-text {
+    margin: 0 2rem;
+}
+/************************Events */
+.Our-Events {
+    padding-top: 4.375rem;
+    text-align: center;
+}
+
+.Events img {
+    width: 18rem;
+    border-radius: 10px 10px 0 0;
+    cursor: pointer;
+}
+
+.Event {
+    display: inline-block;
+    height: 26rem;
+    margin: 1rem 1.25rem;
+    text-align: center;
+    background-color: dodgerblue;
+    border-radius: 10px 10px;
+    border: 1px solid navy;
+    
+}
+
+.details {
+    list-style-type: none;
+    text-align: left;
+    display: inline-block;
+    font-size: 1.25rem;
+    margin: 0.5rem 0;
+}
+
+.Event h3, .info h3 {
+    font-size: 1.5rem;
+}
+
+.Event button {
+   margin-top: 10px;
+   font-size: 1.25rem;
+   color: white;
+   background-color: dodgerblue;
+   border-radius: 5px 5px;
+   border: 1px solid white;
+   padding: 7px 7px;
+   cursor: pointer;
+   font-weight: bold;
+}
+
+.Event button:hover {
+    background-color: white;
+    color: dodgerblue;
+}
+/************************ Contact */
+.opening {
+    text-align: center;
+}
+
+.information {
+    display: flex;
+    justify-content: space-around;
+}
+
+.info {
+    width: 18.75rem;
+    height: 21.875rem;
+    text-align: center;
+}
+
+.info img {
+    width: 6.25rem;
+}
+
+h4 {
+    font-size: 1.25rem;
+}
+
+footer {
+    text-align: center;
+}
+
+/************************Media Queries */
+@media only screen and (max-width: 800px) {
+    .About img {
+        max-height: 15rem;
+        width: auto;
+        align-items: center;
+        margin: 4rem 0;
+    }
+
+    .About {
+        margin: 0 0;
+    }
+
+    .about-text {
+        margin: 0 0.1rem;
+    }
+  }
+
+  @media only screen and (max-width: 600px) {
+    .About img {
+        display: none;
+    }
+    
+    footer {
+        margin: 5rem 0;
+    }
+  }
+  
+  @media only screen and (max-width: 440px) {
+    nav {
+        justify-content: center;
+    }
+
+    nav .links li {
+        font-size: 0.75rem;
+        margin: 0 0.2rem;
+    }
+    
+    .icons, #logo {
+        display: none;
+    }
+
+    .About img {
+        display: none;
+    }
+
+    .Home h1 {
+        font-size: 3rem;
+    }
+
+    .Event img {
+        width: 15rem;
+    }
+
+    .Event {
+        height: 24rem;
+    }
+
+    .information {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .information .info {
+        margin: 2rem 0;
+    }
+  }
+  
