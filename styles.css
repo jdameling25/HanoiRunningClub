@@ -226,8 +226,13 @@ footer {
     }
   }
 
-  @media only screen and (max-width: 600px) {
-    .About img {
+  @media only screen and (max-width: 620px) {
+    nav .links li {
+        font-size: 1.5rem;
+        margin: 0 0.2rem;
+    }
+
+    .About img, #logo {
         display: none;
     }
     
@@ -236,7 +241,7 @@ footer {
     }
   }
   
-  @media only screen and (max-width: 440px) {
+  @media only screen and (max-width: 490px) {
     nav {
         justify-content: center;
     }
